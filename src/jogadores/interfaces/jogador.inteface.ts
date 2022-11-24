@@ -1,9 +1,11 @@
-import { Document } from 'mongoose'
+import { Document } from 'mongoose';
+
 
 export interface Jogador extends Document {
-    readonly celular: string;
+    readonly telefoneCelular: string;
     readonly email: string;
     nome: string;
     ranking: string;
+    posicaoRanking: number;
     urlFotoJogador: string;
 }
